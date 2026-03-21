@@ -9,8 +9,8 @@ const cors = require('cors');
 
 app.use(bodyParser.json())
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(cors());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/', require('./routes'));
 
 mongodb.initDb((err) => {

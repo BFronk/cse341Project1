@@ -8,7 +8,7 @@ const doc = {
     description: 'API for managing contacts'
   },
   host: isProduction
-    ? 'your-app-name.onrender.com'
+    ? 'cse341project1-hdpk.onrender.com'
     : 'localhost:3000',
   schemes: isProduction ? ['https'] : ['http']
 };
