@@ -20,6 +20,8 @@ const initDb =  (callback) => {
             });
 }
 
+console.log('Connecting to MongoDB...');
+
 const getDb = () => {
     if (!database) {
         throw Error('Database connection not established');
